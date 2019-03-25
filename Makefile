@@ -1,7 +1,10 @@
-all: src
+all: src compile
 
 src:
-	./rebar3 get-deps compile
+	./rebar3 get-deps
+
+compile:
+	./rebar3 compile
 
 clean:
 	./rebar3 clean
